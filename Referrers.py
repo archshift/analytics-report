@@ -44,8 +44,6 @@ def main():
 
     profile = ga.authenticate(
         identity=sys.argv[1], save=True, interactive=True,
-        client_id=os.environ['GOOGLE_ANALYTICS_CLIENT_ID'],
-        client_secret=os.environ['GOOGLE_ANALYTICS_CLIENT_SECRET'],
         account=sys.argv[2], webproperty=sys.argv[3], profile=sys.argv[4]
     )
 
